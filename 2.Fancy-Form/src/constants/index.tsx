@@ -12,11 +12,6 @@ export const prices = [
   {
     currency: "BUSD",
     date: "2023-08-29T07:10:40.000Z",
-    price: 0.999183113,
-  },
-  {
-    currency: "BUSD",
-    date: "2023-08-29T07:10:40.000Z",
     price: 0.9998782611186441,
   },
   {
@@ -143,21 +138,6 @@ export const prices = [
     currency: "USC",
     date: "2023-08-29T07:10:40.000Z",
     price: 0.994,
-  },
-  {
-    currency: "USDC",
-    date: "2023-08-29T07:10:30.000Z",
-    price: 1,
-  },
-  {
-    currency: "USDC",
-    date: "2023-08-29T07:10:30.000Z",
-    price: 1,
-  },
-  {
-    currency: "USDC",
-    date: "2023-08-29T07:10:40.000Z",
-    price: 0.9998782611186441,
   },
   {
     currency: "WBTC",
