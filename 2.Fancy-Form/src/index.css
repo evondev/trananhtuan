@@ -5,11 +5,28 @@
 
 @layer base {
   body {
-    @apply bg-gray-200 font-primary text-base antialiased;
+    @apply text-base antialiased bg-gray-200 font-primary;
   }
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
+  button:disabled,
+  input:disabled,
+  select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+.custom-select > span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.custom-select-item > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }

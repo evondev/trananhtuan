@@ -19,13 +19,20 @@ const CurrencySelect = ({
 }) => {
   return (
     <Select disabled={disabled} value={value} onValueChange={onChange}>
-      <SelectTrigger className="w-full">
+      <SelectTrigger className="flex items-center w-full custom-select">
         <SelectValue placeholder="Select currency" />
       </SelectTrigger>
       <SelectContent>
         {currencies.map((currency) => (
-          <SelectItem key={currency} value={currency}>
-            {currency}
+          <SelectItem
+            key={currency}
+            value={currency}
+            className="custom-select-item"
+          >
+            <div className="size-6">
+              <img src={`/tokens/${currency}.svg`} alt="" />
+            </div>
+            <span>{currency}</span>
           </SelectItem>
         ))}
       </SelectContent>
